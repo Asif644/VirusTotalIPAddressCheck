@@ -32,7 +32,7 @@ def query_virustotal(ip):
         return ip, {"error": f"Status {response.status_code}"}
 
 def main():
-    pcap_file = "May+-+Aug+2024_apple.pcap"  # Change to your file name
+    pcap_file = "test.pcap"  # Change to your file name
     print(f"[+] Extracting IPs from {pcap_file}...")
     ip_list = extract_ips_from_pcap(pcap_file)
     print(f"[+] Found {len(ip_list)} unique IPs")
